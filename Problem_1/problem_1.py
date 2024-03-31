@@ -60,7 +60,8 @@ for _ in range(10000):
     current_generation = improved_generation
 
 # The chromosome with the highest fitness from the current generation
-best_chromosome_index = max(chromosome_index for chromosome_index, chromosome in enumerate(current_generation))
+fitness_levels = [fitness(chromosome) for chromosome in current_generation]
+best_chromosome_index = fitness_levels.index(max(fitness_levels))
 best_chromosome = current_generation[best_chromosome_index]
 
 print(f"{best_chromosome} -> {fitness(best_chromosome)}")
