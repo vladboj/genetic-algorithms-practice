@@ -1,0 +1,1 @@
+Solve the knapsack problem, aiming to maximize the weights of the items given through the *items* array.
