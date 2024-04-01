@@ -28,7 +28,7 @@ def main():
         if validate_candidate_solution(possible_solution):
             solutions.append(possible_solution)
     for solution in solutions:
-        print(f"{solution} -> sum = {f(solution)}")
+        print(f"f({solution}) = {f(solution)}")
 
 
 main()
