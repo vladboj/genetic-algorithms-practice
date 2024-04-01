@@ -22,13 +22,13 @@ def generate_possible_solution():
 
 
 def main():
-    possible_solutions = []
-    while len(possible_solutions) < 20:
+    solutions = []
+    while len(solutions) < 20:
         possible_solution = generate_possible_solution()
         if validate_candidate_solution(possible_solution):
-            possible_solutions.append(possible_solution)
-    for possible_solution in possible_solutions:
-        print(f"{possible_solution} -> sum = {f(possible_solution)}")
+            solutions.append(possible_solution)
+    for solution in solutions:
+        print(f"{solution} -> sum = {f(solution)}")
 
 
 main()
