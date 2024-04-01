@@ -13,9 +13,9 @@ def validate_candidate_solution(candidate_solution):
 
 
 def generate_possible_solution():
-    x = random.randint(-2, 7)
-    y = random.randint(-2, 7)
-    z = random.randint(-2, 7)
+    x = random.uniform(-2, 7)
+    y = random.uniform(-2, 7)
+    z = random.uniform(-2, 7)
 
     possible_solution = [x, y, z]
     return possible_solution
