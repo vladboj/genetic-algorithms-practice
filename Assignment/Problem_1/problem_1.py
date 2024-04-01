@@ -3,7 +3,7 @@ import random
 
 def f(xyz):
     x, y, z = xyz
-    return x ** 2 - 2 * y * z
+    return round(x ** 2 - 2 * y * z, 2)
 
 
 def validate_candidate_solution(candidate_solution):
@@ -13,9 +13,9 @@ def validate_candidate_solution(candidate_solution):
 
 
 def generate_possible_solution():
-    x = random.uniform(-2, 7)
-    y = random.uniform(-2, 7)
-    z = random.uniform(-2, 7)
+    x = round(random.uniform(-2, 7), 2)
+    y = round(random.uniform(-2, 7), 2)
+    z = round(random.uniform(-2, 7), 2)
 
     possible_solution = [x, y, z]
     return possible_solution
