@@ -1,7 +1,8 @@
 import random
 
 
-def f(x, y, z):
+def f(xyz):
+    x, y, z = xyz
     return x ** 2 - 2 * y * z
 
 
@@ -27,7 +28,7 @@ def main():
         if validate_candidate_solution(possible_solution):
             possible_solutions.append(possible_solution)
     for possible_solution in possible_solutions:
-        print(f"{possible_solution} -> sum = {sum(possible_solution)}")
+        print(f"{possible_solution} -> sum = {f(possible_solution)}")
 
 
 main()
